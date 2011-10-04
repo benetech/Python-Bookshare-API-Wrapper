@@ -6,7 +6,7 @@ bs=BookshareApi(username, password, api_key, limit)
 *username: the user's username, usually their email address.
 *password: the user's password, as plaintext (encryption to md5 is handled in the class).
 *password_ready: the encrypted form of the password, useful if you store the password in a configuration file and do not want to store it as plaintext
-*key: the api key of your application as issued by Bookshare.
+*key: the api key of your application as issued by Bookshare. You can obtain a developer key at http://developer.bookshare.org and don't need a Bookshare account to do so, but you do need to create a developer account.
 *limit: how many books per page of search results you want. This cannot exceed 250; any value below 0 is set to 1, and above 250 is set to 250. Default is 100.
 
 Now that we have a BookshareApi object, we can start searching and downloading. There are several types of searches you can perform, such as title, author, and so on. They all have a common format, so I will discuss that first.
