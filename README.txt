@@ -3,7 +3,7 @@ To get started, create an instance of the BookshareApi class:
 import pybookshare
 bs=BookshareApi(username, password, api_key, limit)
 
-*username: the user's username, usually their email address.
+*username: the user's username, which is their email address.
 *password: the user's password, as plaintext (encryption to md5 is handled in the class).
 *password_ready: the encrypted form of the password, useful if you store the password in a configuration file and do not want to store it as plaintext
 *key: the api key of your application as issued by Bookshare. You can obtain a developer key at http://developer.bookshare.org and don't need a Bookshare account to do so, but you do need to create a developer account.
